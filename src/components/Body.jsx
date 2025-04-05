@@ -5,7 +5,7 @@ import { getRecipeFromMistral } from "./ai";
 import CustomAlert from "./CustomAlert";
 
 export default function Main() {
-    const [A, setA] = React.useState([]);
+    const [ingredientsArray, setIngredientArray] = React.useState([]);
     const [recipe, setRecipe] = React.useState("");
     const recipeSection = React.useRef(null);
     const [generating, setGenerating] = React.useState(false)
@@ -19,7 +19,7 @@ export default function Main() {
 
     async function getRecipe() {
        !recipe && setGenerating(true)
-       const recipeMarkdown = await getRecipeFromMistral(A)    
+       const recipeMarkdown = await getRecipeFromMistral(ingredientsArray)    
        setRecipe(recipeMarkdown);
     }
   
@@ -27,7 +27,7 @@ export default function Main() {
         const ingredient = formData.get('ingredient').trim();  
         
         if (ingredient) {
-            setA(prev => [...prev, ingredient]); // ✅ Directly update state
+            setIngredientArray(prev => [...prev, ingredient]); 
         }
     }
 
@@ -48,7 +48,7 @@ export default function Main() {
                         <button type="submit" className="addBtn">Add Ingredients</button>
                     </div>
                     
-                    {A.length > 0 && <IngredientsList ref={recipeSection} ingredient={A} getRecipeFunc={getRecipe} /> }
+                    {ingredientsArray.length > 0 && <IngredientsList ref={recipeSection} ingredient={ingredientsArray} getRecipeFunc={getRecipe} /> }
 
                 </form>
             </main>
