@@ -6,8 +6,8 @@ Open the terminal inside.
 
 Install the dependencies using 'npm install' or 'yarn install'
 
-- you have to create a API token on 'hugging face'
-- then create an .env file, and paste the token value and give it a name, put the name inside ai.js file
+- you have to create an API token on 'hugging face' and copy its value
+- then create an .env file inside the project, and assign the value to 'VITE_HF_ACCESS_TOKEN'
 
 Run the project using 'npm run dev' or 'yarn dev'
 
