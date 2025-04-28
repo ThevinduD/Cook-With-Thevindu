@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a recipe generating app. you can add ingredients and generate a recipe according to provided ingredients. built on ReactJS framework and Claude AI for generate the recipe using hugging face API
+This is a recipe-generating app. You can add ingredients and generate a recipe based on the provided ingredients. It is built using the ReactJS framework and utilizes Claude AI through the Hugging Face API to generate recipes.
 
 ## Installation
 ### Clone the Repository
@@ -14,4 +14,4 @@ npm start
 ```
 
 ### Note :
-If recipe response if not generating, its probably because of token expiration. I used a free plan so the token has a limit of responses it can generate. You can create your own hugging face API and put it in the .env and you are all set. Enjoy!!
+If the recipe response is not generating, it’s probably due to token expiration. I used a free plan, which has a limited number of responses it can generate. You can create your own Hugging Face API token, add it to the .env file, and you’re all set. Enjoy!
