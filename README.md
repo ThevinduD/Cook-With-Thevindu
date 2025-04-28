@@ -1,14 +1,17 @@
-# How to setup and run //
+# Cook-With-Thevindu
 
-Download the zip and extract, //Or clone using url.
+## Overview
 
-Open the terminal inside.
+This is a recipe generating app. you can add ingredients and generate a recipe according to provided ingredients. built on ReactJS framework and Claude AI for generate the recipe using hugging face API
 
-Install the dependencies using 'npm install' or 'yarn install'
+## Installation
+### Clone the Repository
+```bash
+git clone https://github.com/ThevinduD/Cook-With-Thevindu.git
+cd Cook-With-Thevindu
+npm install
+npm start
+```
 
-- you have to create an API token on 'hugging face' and copy its value
-- then create an .env file inside the project, and assign the value to 'VITE_HF_ACCESS_TOKEN'
-
-Run the project using 'npm run dev' or 'yarn dev'
-
-Enjoy!!
+### Note :
+If recipe response if not generating, its probably because of token expiration. I used a free plan so the token has a limit of responses it can generate. You can create your own hugging face API and put it in the .env and you are all set. Enjoy!!
