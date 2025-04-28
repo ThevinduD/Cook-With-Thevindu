@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a recipe-generating app. You can add ingredients and generate a recipe based on the provided ingredients. It is built using the ReactJS framework and utilizes Claude AI through the Hugging Face API to generate recipes.
+This is a recipe-generating app. You can add ingredients and generate a recipe based on the provided ingredients. It is built using the ReactJS framework and utilizes Mistral AI through the Hugging Face API to generate recipes.
 
 ## Installation
 ### Clone the Repository
